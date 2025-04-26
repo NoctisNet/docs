@@ -2,17 +2,17 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "NoctisNet Documentation",
   "logo": {
-    "dark": "/images/logo-dark.png", // <-- Replace with actual URL/path to your dark mode logo
-    "light": "/images/logo-light.png" // <-- Replace with actual URL/path to your light mode logo
+    "dark": "/images/logo-dark.png",
+    "light": "/images/logo-light.png"
   },
-  "favicon": "/favicon.ico", // <-- Replace with actual URL/path to your favicon
+  "favicon": "/favicon.ico",
   "colors": {
-    "primary": "#6A4DFF", // Accent color from NoctisNet buttons/links
-    "light": "#FFFFFF",   // Primary light background
-    "dark": "#1A1A3D",    // Primary dark background from NoctisNet
+    "primary": "#6A4DFF",
+    "light": "#FFFFFF",
+    "dark": "#1A1A3D",
     "anchors": {
-      "from": "#6A4DFF", // Gradient start for anchors (optional, matches primary)
-      "to": "#4A3AFF"    // Gradient end for anchors (optional, a slightly different shade)
+      "from": "#6A4DFF",
+      "to": "#4A3AFF"
     }
   },
   "metadata": {
@@ -24,22 +24,21 @@
       "name": "Main Site",
       "url": "https://www.noctisnet.com/"
     }
-    // You could add more links here, e.g., to a Status Page or Blog
   ],
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference" // This will be the slug for the tab
+      "url": "api-reference"
     },
     {
       "name": "Guides",
-      "url": "guides" // This will be the slug for the tab
+      "url": "guides"
     }
   ],
   "anchors": [
     {
       "name": "NoctisNet Platform",
-      "icon": "network", // Example icon (check Mintlify icons)
+      "icon": "network",
       "url": "https://www.noctisnet.com/platform"
     },
     {
@@ -50,20 +49,18 @@
   ],
   "navigation": [
     {
-      "tab": "API Reference", // Matches a tab name defined above
-      "layout": "openapi",   // Specifies layout for this tab
-      "openapi": "https://frog.noctisnet.com/api-defs" // Ensure this URL serves a valid OpenAPI v3 spec
+      "tab": "API Reference",
+      "layout": "openapi",
+      "openapi": "https://frog.noctisnet.com/api-defs"
     },
     {
-      "tab": "Guides", // Matches a tab name defined above
-      "layout": "docs", // Standard documentation layout
+      "tab": "Guides",
+      "layout": "docs",
       "pages": [
-         // Consider adding an Introduction/Getting Started page here
-         // "introduction/getting-started",
         {
           "group": "Screenshot API",
           "pages": [
-            "guides/screenshot-api/introduction", // Example: Add introductions
+            "guides/screenshot-api/introduction",
             "guides/screenshot-api/capture-a-screenshot-with-default-options",
             "guides/screenshot-api/capture-a-screenshot-with-custom-options",
             "guides/screenshot-api/get-screenshot-by-id",
@@ -83,7 +80,7 @@
             "guides/screenshot-api/compare-two-screenshots-with-html-diff",
             "guides/screenshot-api/compare-two-screenshots-with-image-diff",
             {
-              "group": "Scheduling", // Nested group for schedules/tasks
+              "group": "Scheduling",
               "pages": [
                 "guides/screenshot-api/scheduling/create-a-new-screenshot-schedule",
                 "guides/screenshot-api/scheduling/get-all-schedules-for-a-user",
@@ -92,11 +89,11 @@
                 "guides/screenshot-api/scheduling/resume-a-schedule",
                 "guides/screenshot-api/scheduling/delete-a-schedule",
                 "guides/screenshot-api/scheduling/get-scheduling-statistics",
-                "guides/screenshot-api/scheduling/submit-a-bulk-screenshot-request" // Assuming bulk relates to scheduling/tasks
+                "guides/screenshot-api/scheduling/submit-a-bulk-screenshot-request"
               ]
             },
              {
-              "group": "Tasks", // Nested group for tasks
+              "group": "Tasks",
               "pages": [
                 "guides/screenshot-api/tasks/get-all-tasks-for-a-user",
                 "guides/screenshot-api/tasks/get-task-status",
@@ -107,9 +104,9 @@
           ]
         },
         {
-          "group": "ASN & Network Intelligence", // Renamed "asns" for clarity
+          "group": "ASN & Network Intelligence",
           "pages": [
-            "guides/asns/introduction", // Example: Add introductions
+            "guides/asns/introduction",
             "guides/asns/retrieve-all-autonomous-system-numbers-asns",
             "guides/asns/find-asns-by-part-of-name-or-number",
             "guides/asns/retrieve-rankings-for-all-asns",
@@ -118,19 +115,12 @@
             "guides/asns/retrieve-all-organizations",
             "guides/asns/retrieve-all-top-level-domains-tlds",
             "guides/asns/get-similar-ip-addresses",
-            "guides/asns/get-similar-domains", // Moved from Domain API for network context
-            "guides/asns/search-the-blacklist-for-an-entry-that-matches-or-includes-the-input" // Assuming blacklist relates to network intel
-             // Group Ground Truth APIs together if desired
-            //"guides/asns/ground-truth/compute-prefix-ground-truth",
-            //"guides/asns/ground-truth/compute-prefix-ground-truth-1", // Consider renaming file for clarity
-            //"guides/asns/ground-truth/compute-domain-ground-truth",
-            //"guides/asns/ground-truth/compute-asn-ground-truth",
-            //"guides/asns/ground-truth/compute-asn-ground-truth-1", // Consider renaming file
-            //"guides/asns/ground-truth/compute-ip-ground-truth"
+            "guides/asns/get-similar-domains",
+            "guides/asns/search-the-blacklist-for-an-entry-that-matches-or-includes-the-input"
           ]
         },
         {
-          "group": "Domain & DNS API", // Combined Domain and DNS
+          "group": "Domain & DNS API",
            "pages": [
             "guides/domains/introduction",
             "guides/domains/add-a-new-domain",
@@ -152,7 +142,7 @@
                     "guides/domains/relationships/retrieve-domains-sharing-the-same-mail-host",
                     "guides/domains/relationships/retrieve-domains-sharing-nameservers",
                     "guides/domains/relationships/retrieve-domains-within-the-same-asn",
-                    "guides/domains/relationships/explore-domain-relationships-graph-data" // Related to visualize?
+                    "guides/domains/relationships/explore-domain-relationships-graph-data"
                  ]
              },
              {
@@ -204,7 +194,7 @@
           ]
         },
         {
-            "group": "Noctis Classic", // Kept separate as it might be a distinct product/legacy
+            "group": "Noctis Classic",
              "pages": [
                  "guides/classic/introduction",
                  {
@@ -216,7 +206,7 @@
                         "guides/classic/lookup/whois-history",
                         "guides/classic/lookup/domain-risk-score",
                         "guides/classic/lookup/domain-risk-score-evidence",
-                        "guides/classic/lookup/domain-reputation-legacy" // Included legacy here
+                        "guides/classic/lookup/domain-reputation-legacy"
                      ]
                  },
                  {
@@ -232,22 +222,22 @@
              ]
         },
         {
-          "group": "File & List Operations", // Combined File Ops and list-related endpoints
+          "group": "File & List Operations",
           "pages": [
             "guides/files/introduction",
             "guides/files/upload-and-add-domains-for-bulk-resolution-and-system-update",
             "guides/files/add-domains-to-a-named-list",
             "guides/files/retrieve-all-domain-lists-with-their-respective-statistics",
-            "guides/files/get-summary-of-all-lists", // From 'domains' group
-            "guides/files/retrieve-paginated-content-from-a-specific-list", // From 'domains' group
-            "guides/files/count-list-nodes", // From 'asns' and 'scoring' groups
+            "guides/files/get-summary-of-all-lists",
+            "guides/files/retrieve-paginated-content-from-a-specific-list",
+            "guides/files/count-list-nodes",
             "guides/files/processes-a-stream-of-urls-to-extract-and-analyze-domains",
             "guides/files/upload-file-to-detect-hostnames-and-explore-domain-relationships",
-            "guides/files/detects-any-hostname-in-a-given-file-and-explores-domain-relationships" // From 'asns' group
+            "guides/files/detects-any-hostname-in-a-given-file-and-explores-domain-relationships"
           ]
         },
         {
-          "group": "Visualization & Graph", // Combined visualize endpoints
+          "group": "Visualization & Graph",
            "pages": [
                 "guides/visualize/introduction",
                 "guides/visualize/retrieve-organization-relationships",
@@ -258,7 +248,7 @@
            ]
         },
          {
-          "group": "Scoring & Ground Truth", // Combined scoring and ground truth
+          "group": "Scoring & Ground Truth",
            "pages": [
                "guides/scoring/introduction",
                "guides/scoring/compute-domain-ground-truth-score",
@@ -266,24 +256,23 @@
                "guides/scoring/compute-organization-ground-truth",
                "guides/scoring/compute-ip-ground-truth",
                "guides/scoring/compute-asn-ground-truth",
-               "guides/scoring/enumerating-basic-subdomains" // From 'asns' and 'scoring' groups
-               // Maybe add links back to the specific ground truth endpoints in ASN section if needed
+               "guides/scoring/enumerating-basic-subdomains"
            ]
         },
         {
-          "group": "Utilities", // Grouping miscellaneous endpoints
+          "group": "Utilities",
           "pages": [
-             "guides/utils/return-privacy-policy-for-the-services" // From visualize group
+             "guides/utils/return-privacy-policy-for-the-services"
           ]
         },
         {
-           "group": "Data Feeds", // Renamed "Noctis Feeds"
+           "group": "Data Feeds",
            "pages": [
               "guides/feeds/list-feed-files"
            ]
         },
         {
-          "group": "Account", // Renamed "Noctis Account Information"
+          "group": "Account",
           "pages": [
             "guides/account/account-information"
           ]
@@ -293,14 +282,10 @@
   ],
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/noctisnet"
-    // Add other relevant socials like twitter, github etc.
-    // "twitter": "https://twitter.com/yourhandle",
-    // "github": "https://github.com/yourorg"
   },
   "feedback": {
     "thumbsRating": true,
-    "suggestEdit": true, // Requires setting up a public GitHub repo if you want users to submit PRs
-    "raiseIssue": false // Set to true if you want a link to raise GitHub issues
-    // "githubRepo": "your-github-org/your-docs-repo" // Required for suggestEdit/raiseIssue
+    "suggestEdit": true,
+    "raiseIssue": false
   }
 }
