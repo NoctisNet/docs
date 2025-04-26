@@ -1,291 +1,102 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "name": "NoctisNet Documentation",
-  "logo": {
-    "dark": "/images/logo-dark.png",
-    "light": "/images/logo-light.png"
-  },
-  "favicon": "/favicon.ico",
+  "theme": "mint",
+  "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#6A4DFF",
-    "light": "#FFFFFF",
-    "dark": "#1A1A3D",
-    "anchors": {
-      "from": "#6A4DFF",
-      "to": "#4A3AFF"
-    }
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
   },
-  "metadata": {
-     "title": "NoctisNet API & Documentation",
-     "description": "Explore the NoctisNet API suite for advanced threat intelligence, domain analysis, and cybersecurity solutions."
-  },
-  "topbarLinks": [
-    {
-      "name": "Main Site",
-      "url": "https://www.noctisnet.com/"
-    }
-  ],
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    },
-    {
-      "name": "Guides",
-      "url": "guides"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "NoctisNet Platform",
-      "icon": "network",
-      "url": "https://www.noctisnet.com/platform"
-    },
-    {
-      "name": "Contact Sales",
-      "icon": "envelope",
-      "url": "https://www.noctisnet.com/contact"
-    }
-  ],
-  "navigation": [
-    {
-      "tab": "API Reference",
-      "layout": "openapi",
-      "openapi": "https://frog.noctisnet.com/api-defs"
-    },
-    {
-      "tab": "Guides",
-      "layout": "docs",
-      "pages": [
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "development"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/settings",
+              "essentials/navigation",
+              "essentials/reusable-snippets"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
         {
-          "group": "Screenshot API",
-          "pages": [
-            "guides/screenshot-api/introduction",
-            "guides/screenshot-api/capture-a-screenshot-with-default-options",
-            "guides/screenshot-api/capture-a-screenshot-with-custom-options",
-            "guides/screenshot-api/get-screenshot-by-id",
-            "guides/screenshot-api/delete-screenshot-by-id",
-            "guides/screenshot-api/get-screenshot-image-by-id",
-            "guides/screenshot-api/capture-and-view-screenshot",
-            "guides/screenshot-api/get-screenshots-by-username",
-            "guides/screenshot-api/delete-screenshots-by-username",
-            "guides/screenshot-api/get-screenshots-by-url",
-            "guides/screenshot-api/get-screenshot-statistics",
-            "guides/screenshot-api/search-screenshots-with-filters",
-            "guides/screenshot-api/retrieve-screenshots-by-username-with-format-options",
-            "guides/screenshot-api/retrieve-screenshots-by-url-with-format-options",
-            "guides/screenshot-api/capture-and-parse-screenshot-content",
-            "guides/screenshot-api/get-paginated-list-of-screenshots",
-            "guides/screenshot-api/list-all-screenshots-as-html",
-            "guides/screenshot-api/compare-two-screenshots-with-html-diff",
-            "guides/screenshot-api/compare-two-screenshots-with-image-diff",
-            {
-              "group": "Scheduling",
-              "pages": [
-                "guides/screenshot-api/scheduling/create-a-new-screenshot-schedule",
-                "guides/screenshot-api/scheduling/get-all-schedules-for-a-user",
-                "guides/screenshot-api/scheduling/get-schedule-by-id",
-                "guides/screenshot-api/scheduling/pause-a-schedule",
-                "guides/screenshot-api/scheduling/resume-a-schedule",
-                "guides/screenshot-api/scheduling/delete-a-schedule",
-                "guides/screenshot-api/scheduling/get-scheduling-statistics",
-                "guides/screenshot-api/scheduling/submit-a-bulk-screenshot-request"
-              ]
-            },
-             {
-              "group": "Tasks",
-              "pages": [
-                "guides/screenshot-api/tasks/get-all-tasks-for-a-user",
-                "guides/screenshot-api/tasks/get-task-status",
-                "guides/screenshot-api/tasks/cancel-a-task",
-                "guides/screenshot-api/tasks/delete-a-task"
-               ]
-            }
-          ]
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
         },
         {
-          "group": "ASN & Network Intelligence",
-          "pages": [
-            "guides/asns/introduction",
-            "guides/asns/retrieve-all-autonomous-system-numbers-asns",
-            "guides/asns/find-asns-by-part-of-name-or-number",
-            "guides/asns/retrieve-rankings-for-all-asns",
-            "guides/asns/get-asn-listing-statistics",
-            "guides/asns/maps-the-network-positioning-of-the-given-resource",
-            "guides/asns/retrieve-all-organizations",
-            "guides/asns/retrieve-all-top-level-domains-tlds",
-            "guides/asns/get-similar-ip-addresses",
-            "guides/asns/get-similar-domains",
-            "guides/asns/search-the-blacklist-for-an-entry-that-matches-or-includes-the-input"
-          ]
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
         },
         {
-          "group": "Domain & DNS API",
-           "pages": [
-            "guides/domains/introduction",
-            "guides/domains/add-a-new-domain",
-            "guides/domains/check-if-a-domain-exists",
-            "guides/domains/get-total-domain-count",
-            "guides/domains/retrieve-domain-information-card",
-            "guides/domains/retrieve-mail-servers-for-a-domain",
-            "guides/domains/retrieve-nameservers-associated-with-a-domain",
-            "guides/domains/retrieve-autonomous-system-numbers-asns-for-a-domain",
-             {
-                "group": "Domain Relationships",
-                 "pages": [
-                    "guides/domains/relationships/find-similar-domains-non-streaming",
-                    "guides/domains/relationships/find-similar-domains-streaming",
-                    "guides/domains/relationships/retrieve-domains-linking-to-the-specified-domain",
-                    "guides/domains/relationships/retrieve-domains-sharing-the-same-ip-address",
-                    "guides/domains/relationships/retrieve-domains-on-the-same-network-prefix",
-                    "guides/domains/relationships/retrieve-domains-under-same-organisation",
-                    "guides/domains/relationships/retrieve-domains-sharing-the-same-mail-host",
-                    "guides/domains/relationships/retrieve-domains-sharing-nameservers",
-                    "guides/domains/relationships/retrieve-domains-within-the-same-asn",
-                    "guides/domains/relationships/explore-domain-relationships-graph-data"
-                 ]
-             },
-             {
-                "group": "Async Similarity",
-                "pages": [
-                    "guides/domains/async/submit-an-asynchronous-request-to-find-similar-domains",
-                    "guides/domains/async/get-the-results-of-an-asynchronous-domain-similarity-request"
-                ]
-             },
-             {
-                "group": "DNS Resolution",
-                "pages": [
-                    "guides/domains/dns/resolve-dns-query-via-post-in-wire-format",
-                    "guides/domains/dns/resolve-dns-query-via-get-in-wire-format"
-                ]
-             }
-           ]
-        },
-         {
-          "group": "Noctis Vulpra",
-          "pages": [
-            "guides/vulpra/introduction",
-            {
-              "group": "Investigate",
-              "pages": [
-                "guides/vulpra/investigate/vulpra-investigate-query-get",
-                "guides/vulpra/investigate/vulpra-investigate-query-post"
-              ]
-            },
-            {
-              "group": "Enrich",
-              "pages": [
-                "guides/vulpra/enrich/vulpra-enrich-query-get",
-                "guides/vulpra/enrich/vulpra-enrich-query-post"
-              ]
-            },
-            {
-              "group": "Detect",
-              "pages": [
-                 "guides/vulpra/detect/introduction",
-                 "guides/vulpra/detect/monitor-list",
-                 "guides/vulpra/detect/escalate-domains",
-                 "guides/vulpra/detect/update-domain-state-watchignore",
-                 "guides/vulpra/detect/watched-domains-changedescalated",
-                 "guides/vulpra/detect/newly-discovered-domains",
-                 "guides/vulpra/detect/ignored-domains"
-              ]
-            }
-          ]
-        },
-        {
-            "group": "Noctis Classic",
-             "pages": [
-                 "guides/classic/introduction",
-                 {
-                    "group": "Lookup & Reversing",
-                     "pages": [
-                        "guides/classic/lookup/domain-profile",
-                        "guides/classic/lookup/whois-lookup",
-                        "guides/classic/lookup/parsed-whois",
-                        "guides/classic/lookup/whois-history",
-                        "guides/classic/lookup/domain-risk-score",
-                        "guides/classic/lookup/domain-risk-score-evidence",
-                        "guides/classic/lookup/domain-reputation-legacy"
-                     ]
-                 },
-                 {
-                    "group": "Monitors",
-                    "pages": [
-                        "guides/classic/monitors/brand-monitor",
-                        "guides/classic/monitors/registrant-monitor",
-                        "guides/classic/monitors/name-server-monitor",
-                        "guides/classic/monitors/ip-monitor",
-                        "guides/classic/monitors/ip-registrant-monitor"
-                     ]
-                 }
-             ]
-        },
-        {
-          "group": "File & List Operations",
-          "pages": [
-            "guides/files/introduction",
-            "guides/files/upload-and-add-domains-for-bulk-resolution-and-system-update",
-            "guides/files/add-domains-to-a-named-list",
-            "guides/files/retrieve-all-domain-lists-with-their-respective-statistics",
-            "guides/files/get-summary-of-all-lists",
-            "guides/files/retrieve-paginated-content-from-a-specific-list",
-            "guides/files/count-list-nodes",
-            "guides/files/processes-a-stream-of-urls-to-extract-and-analyze-domains",
-            "guides/files/upload-file-to-detect-hostnames-and-explore-domain-relationships",
-            "guides/files/detects-any-hostname-in-a-given-file-and-explores-domain-relationships"
-          ]
-        },
-        {
-          "group": "Visualization & Graph",
-           "pages": [
-                "guides/visualize/introduction",
-                "guides/visualize/retrieve-organization-relationships",
-                "guides/visualize/explore-ip-relationships-in-graph-database",
-                "guides/visualize/retrieve-domain-relationships",
-                "guides/visualize/retrieve-asn-relationships",
-                "guides/visualize/generate-cypher-query"
-           ]
-        },
-         {
-          "group": "Scoring & Ground Truth",
-           "pages": [
-               "guides/scoring/introduction",
-               "guides/scoring/compute-domain-ground-truth-score",
-               "guides/scoring/compute-prefix-ground-truth",
-               "guides/scoring/compute-organization-ground-truth",
-               "guides/scoring/compute-ip-ground-truth",
-               "guides/scoring/compute-asn-ground-truth",
-               "guides/scoring/enumerating-basic-subdomains"
-           ]
-        },
-        {
-          "group": "Utilities",
-          "pages": [
-             "guides/utils/return-privacy-policy-for-the-services"
-          ]
-        },
-        {
-           "group": "Data Feeds",
-           "pages": [
-              "guides/feeds/list-feed-files"
-           ]
-        },
-        {
-          "group": "Account",
-          "pages": [
-            "guides/account/account-information"
-          ]
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
         }
       ]
     }
-  ],
-  "footerSocials": {
-    "linkedin": "https://www.linkedin.com/company/noctisnet"
   },
-  "feedback": {
-    "thumbsRating": true,
-    "suggestEdit": true,
-    "raiseIssue": false
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
   }
 }
