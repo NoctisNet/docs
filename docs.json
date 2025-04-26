@@ -1,106 +1,245 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "NoctisNet Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2c3e50",
+    "light": "#ecf0f1",
+    "dark": "#34495e"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "My Noctis API Reference",
-        "openapi": "https://frog.noctisnet.com/api-defs"
-      },
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
+  "theme": "mint",
+  "topbarLinks": [
+    {
+      "name": "Main Site",
+      "url": "https://www.noctisnet.com/"
+    }
+  ],
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "navigation": [
+    {
+      "tab": "API Reference",
+      "openapi": "https://frog.noctisnet.com/api-defs"
+    },
+    {
+      "tab": "Documentation",
+      "pages": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "group": "Screenshot API",
+          "pages": [
+            "api/screenshot-api/resume-a-schedule",
+            "api/screenshot-api/pause-a-schedule",
+            "api/screenshot-api/capture-a-screenshot-with-default-options",
+            "api/screenshot-api/capture-a-screenshot-with-custom-options",
+            "api/screenshot-api/get-all-schedules-for-a-user",
+            "api/screenshot-api/create-a-new-screenshot-schedule",
+            "api/screenshot-api/submit-a-bulk-screenshot-request",
+            "api/screenshot-api/get-screenshot-by-id",
+            "api/screenshot-api/delete-screenshot-by-id",
+            "api/screenshot-api/get-screenshot-image-by-id",
+            "api/screenshot-api/capture-and-view-screenshot",
+            "api/screenshot-api/get-screenshots-by-username",
+            "api/screenshot-api/delete-screenshots-by-username",
+            "api/screenshot-api/get-screenshots-by-url",
+            "api/screenshot-api/get-screenshot-statistics",
+            "api/screenshot-api/search-screenshots-with-filters",
+            "api/screenshot-api/retrieve-screenshots-by-username-with-format-options",
+            "api/screenshot-api/retrieve-screenshots-by-url-with-format-options",
+            "api/screenshot-api/capture-and-parse-screenshot-content",
+            "api/screenshot-api/get-paginated-list-of-screenshots",
+            "api/screenshot-api/list-all-screenshots-as-html",
+            "api/screenshot-api/compare-two-screenshots-with-html-diff",
+            "api/screenshot-api/compare-two-screenshots-with-image-diff",
+            "api/screenshot-api/get-schedule-by-id",
+            "api/screenshot-api/delete-a-schedule",
+            "api/screenshot-api/get-scheduling-statistics",
+            "api/screenshot-api/get-all-tasks-for-a-user",
+            "api/screenshot-api/get-task-status",
+            "api/screenshot-api/cancel-a-task",
+            "api/screenshot-api/delete-a-task"
+          ]
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "group": "asns",
+          "pages": [
+            "api/asns/compute-prefix-ground-truth",
+            "api/asns/compute-prefix-ground-truth-1",
+            "api/asns/compute-domain-ground-truth",
+            "api/asns/compute-asn-ground-truth",
+            "api/asns/compute-asn-ground-truth-1",
+            "api/asns/detects-any-hostname-in-a-given-file-and-explores-domain-relationships",
+            "api/asns/retrieve-infrastructure-mapping-for-domain",
+            "api/asns/enumerating-basic-subdomains",
+            "api/asns/count-list-nodes",
+            "api/asns/compute-ip-ground-truth",
+            "api/asns/search-the-blacklist-for-an-entry-that-matches-or-includes-the-input",
+            "api/asns/maps-the-network-positioning-of-the-given-resource",
+            "api/asns/retrieve-all-organizations",
+            "api/asns/get-similar-ip-addresses",
+            "api/asns/get-similar-domains",
+            "api/asns/retrieve-all-top-level-domains-tlds",
+            "api/asns/retrieve-rankings-for-all-asns",
+            "api/asns/find-asns-by-part-of-name-or-number",
+            "api/asns/retrieve-all-autonomous-system-numbers-asns",
+            "api/asns/get-asn-listing-statistics"
+          ]
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "group": "Noctis Vulpra",
+          "pages": [
+            {
+              "group": "Investigate",
+              "pages": [
+                "api/noctis-vulpra-investigate/vulpra-investigate-query-get",
+                "api/noctis-vulpra-investigate/vulpra-investigate-query-post"
+              ]
+            },
+            {
+              "group": "Enrich",
+              "pages": [
+                "api/noctis-vulpra-enrich/vulpra-enrich-query-get",
+                "api/noctis-vulpra-enrich/vulpra-enrich-query-post"
+              ]
+            },
+            {
+              "group": "Detect",
+              "pages": [
+                "api/noctis-vulpra-detect/escalate-domains",
+                "api/noctis-vulpra-detect/update-domain-state-watchignore",
+                "api/noctis-vulpra-detect/monitor-list",
+                "api/noctis-vulpra-detect/watched-domains-changedescalated",
+                "api/noctis-vulpra-detect/newly-discovered-domains",
+                "api/noctis-vulpra-detect/ignored-domains"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "File Operations",
+          "pages": [
+            "api/file-operations/processes-a-stream-of-urls-to-extract-and-analyze-domains",
+            "api/file-operations/upload-and-add-domains-for-bulk-resolution-and-system-update",
+            "api/file-operations/add-domains-to-a-named-list",
+            "api/file-operations/upload-file-to-detect-hostnames-and-explore-domain-relationships",
+            "api/file-operations/retrieve-all-domain-lists-with-their-respective-statistics"
+          ]
+        },
+        {
+          "group": "DNS Resolution",
+          "pages": [
+            "api/dns-resolution/resolve-dns-query-via-post-in-wire-format",
+            "api/dns-resolution/resolve-dns-query-via-get-in-wire-format"
+          ]
+        },
+        {
+          "group": "Domain API",
+          "pages": [
+            "api/domain-api/add-a-new-domain",
+            "api/domain-api/find-similar-domains-non-streaming",
+            "api/domain-api/find-similar-domains-streaming",
+            "api/domain-api/check-if-a-domain-exists",
+            "api/domain-api/get-total-domain-count"
+          ]
+        },
+        {
+          "group": "Async Domain API",
+          "pages": [
+            "api/async-domain-api/submit-an-asynchronous-request-to-find-similar-domains",
+            "api/async-domain-api/get-the-results-of-an-asynchronous-domain-similarity-request"
+          ]
+        },
+        {
+          "group": "visualize",
+          "pages": [
+            "api/visualize/retrieve-organization-relationships",
+            "api/visualize/explore-ip-relationships-in-graph-database",
+            "api/visualize/retrieve-domain-relationships",
+            "api/visualize/retrieve-asn-relationships",
+            "api/visualize/return-privacy-policy-for-the-services",
+            "api/visualize/generate-cypher-query"
+          ]
+        },
+        {
+          "group": "scoring-algorithm-sr",
+          "pages": [
+            "api/scoring-algorithm-sr/retrieve-infrastructure-mapping-for-domain",
+            "api/scoring-algorithm-sr/count-list-nodes",
+            "api/scoring-algorithm-sr/compute-prefix-ground-truth",
+            "api/scoring-algorithm-sr/compute-organization-ground-truth",
+            "api/scoring-algorithm-sr/compute-ip-ground-truth",
+            "api/scoring-algorithm-sr/compute-domain-ground-truth-score",
+            "api/scoring-algorithm-sr/compute-asn-ground-truth",
+            "api/scoring-algorithm-sr/compute-prefix-ground-truth-1",
+            "api/scoring-algorithm-sr/search-the-blacklist-for-an-entry-that-matches-or-includes-the-input",
+            "api/scoring-algorithm-sr/enumerating-basic-subdomains",
+            "api/scoring-algorithm-sr/maps-the-network-positioning-of-the-given-resource"
+          ]
+        },
+        {
+          "group": "Noctis Classic",
+          "pages": [
+            {
+              "group": "Lookup & Reversing",
+              "pages": [
+                "api/noctis-classic-lookup-&-reversing/domain-profile",
+                "api/noctis-classic-lookup-&-reversing/whois-lookup",
+                "api/noctis-classic-lookup-&-reversing/parsed-whois",
+                "api/noctis-classic-lookup-&-reversing/whois-history",
+                "api/noctis-classic-lookup-&-reversing/domain-risk-score",
+                "api/noctis-classic-lookup-&-reversing/domain-risk-score-evidence"
+              ]
+            },
+            {
+              "group": "Monitors",
+              "pages": [
+                "api/noctis-classic-monitors/registrant-monitor",
+                "api/noctis-classic-monitors/name-server-monitor",
+                "api/noctis-classic-monitors/ip-monitor",
+                "api/noctis-classic-monitors/ip-registrant-monitor",
+                "api/noctis-classic-monitors/brand-monitor"
+              ]
+            },
+            {
+              "group": "Lookup & Reversing (Legacy)",
+              "pages": [
+                "api/noctis-classic-lookup-&-reversing-legacy/domain-reputation-legacy"
+              ]
+            }
+          ]
+        },
+        {
+          "group": "Noctis Feeds",
+          "pages": [
+            "api/noctis-feeds/list-feed-files"
+          ]
+        },
+        {
+          "group": "Noctis Account Information",
+          "pages": [
+            "api/noctis-account-information/account-information"
+          ]
+        },
+        {
+          "group": "domains",
+          "pages": [
+            "api/domains/retrieve-mail-servers-for-a-domain",
+            "api/domains/get-summary-of-all-lists",
+            "api/domains/retrieve-paginated-content-from-a-specific-list",
+            "api/domains/retrieve-domains-linking-to-the-specified-domain",
+            "api/domains/retrieve-domains-sharing-the-same-ip-address",
+            "api/domains/retrieve-domains-on-the-same-network-prefix",
+            "api/domains/retrieve-domains-under-same-organisation",
+            "api/domains/retrieve-nameservers-associated-with-a-domain",
+            "api/domains/retrieve-domain-information-card",
+            "api/domains/retrieve-domains-sharing-the-same-mail-host",
+            "api/domains/retrieve-autonomous-system-numbers-asns-for-a-domain",
+            "api/domains/explore-domain-relationships-graph-data",
+            "api/domains/retrieve-domains-sharing-nameservers",
+            "api/domains/retrieve-domains-within-the-same-asn"
+          ]
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
+  ]
 }
