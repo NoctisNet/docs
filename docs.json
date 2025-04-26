@@ -11,6 +11,10 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "My Noctis API Reference",
+        "openapi": "https://frog.noctisnet.com/api-defs"
+      },
+      {
         "tab": "Guides",
         "groups": [
           {
@@ -36,8 +40,23 @@
       },
       {
         "tab": "API Reference",
-                "openapi": "https://frog.noctisnet.com/api-defs"
-
+        "groups": [
+          {
+            "group": "API Documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint Examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
       }
     ],
     "global": {
