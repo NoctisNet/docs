@@ -1,15 +1,13 @@
 {
-  "name": "Noctis",
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#6E3EFF",
-    "light": "#8C82FF",
-    "dark": "#4A0AB9"
-  },
-  "favicon": "https://www.noctisnet.com/favicon.ico",
-  "logo": {
-    "light": "https://www.noctisnet.com/logo-light.png",
-    "dark": "https://www.noctisnet.com/logo-dark.png"
-  },
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  }, 
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -249,27 +247,46 @@
     ],
     "global": {
       "anchors": [
-        { "label": "Technology", "href": "https://www.noctisnet.com/technology" },
-        { "label": "Team",       "href": "https://www.noctisnet.com/team" },
-        { "label": "Contact",    "href": "https://www.noctisnet.com/contact" }
+        {
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
+        {
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
+        }
       ]
-    },
-    "navbar": {
-      "links": [
-        { "label": "Contact", "href": "https://www.noctisnet.com/contact" }
-      ],
-      "primary": {
-        "type": "button",
-        "label": "Log In",
-        "href": "https://www.noctisnet.com/login"
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:hi@mintlify.com"
       }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/NoctisNet",
-      "github": "https://github.com/NoctisNet",
-      "linkedin": "https://www.linkedin.com/company/noctisnet"
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
 }
