@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "name": "NoctisNet Documentation",
-  "colors": {
+  "colors": { 
     "primary": "#2c3e50",
     "light": "#ecf0f1",
     "dark": "#34495e"
