@@ -36,6 +36,7 @@
       },
       {
         "tab": "API Reference",
+        "openapi": "https://frog.noctisnet.com/api-defs",
         "groups": [
           {
     "group": "Screenshot API",
